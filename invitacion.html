@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación de Cumpleaños</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .sobre {
+      position: relative;
+      width: 360px;
+      height: 260px;
+      background: #ffc0cb;
+      border: 2px solid #ff69b4;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .tapa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: #ff99cc;
+      transform-origin: top;
+      transition: transform 0.5s ease;
+      z-index: 2;
+    }
+
+    .sobre:hover .tapa {
+      transform: rotateX(180deg);
+    }
+
+    .tarjeta {
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+      z-index: 1;
+      position: relative;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sobre">
+    <div class="tapa"></div>
+    <img src="Invitación.jpg" alt="Invitación de cumpleaños" class="tarjeta">
+  </div>
+</body>
+</html>
